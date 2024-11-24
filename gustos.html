@@ -5,7 +5,7 @@
     <title>Sebastian Adriano Castillo</title>
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-        <style>
+    <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f6f9;
@@ -74,25 +74,29 @@
             line-height: 1.6;
             margin: 15px 0;
         }
-        img.sanpablo {
-            display: block;
-            margin: 30px auto;
-            max-width: 90%;
-            border-radius: 15px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            animation: fadeInImage 3s ease-in-out;
-        }
-        img.nasty {
+        img {
             display: block;
             margin: 30px auto;
             max-width: 90%;
             border-radius: 15px;
             animation: fadeInImage 3s ease-in-out;
         }
-        ul.gustos {
-            list-style-type: disc;
-            padding-left: 20px;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            gap: 10px; /* Espacio entre elementos */
             text-align: left;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .grid-container div {
+            background-color: #f0f4ff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+            color: #001b63;
+            text-align: center;
         }
         footer {
             background-color: #001b63;
@@ -128,107 +132,41 @@
         <li><a href="servicio.html">Compañeros</a></li>
         <li><a href="Productos.html">Redes</a></li>
     </ul>
-    <p>En esta pagina quiero realizar una presentacion de mi persona,soy un chico de 18 años que nacio el 10 de enero del 2006 mis pasiones son la musica, los videojuegos, las series animadas, las peliculas, y pasar el tiempo con mis amigos</p>
-    <p>Los cursos que estoy llevando en este semestre son:<br>
-    Matematica 1<br>
-    Introducción a Ciencia de la Computación<br>
-    Programación para videjuegos<br>
-    Estructuras discretas 2<br>
-    Introducción a la Filosofía<br></p>
-    <img class="sanpablo" src="assets/imagenes/milk.jpg" alt="San Pablo">
-    
-    <!-- Sección de gustos -->
-    <section id="gustos">
-        <h2>Mis Gustos</h2>
-        
-        <!-- Música -->
-        <h3>Artistas/Bandas Musicales</h3>
-        <ul class="gustos">
-            <li>Her's</li>
-            <li>Esteman</li>
-            <li>Kali Uchis</li>
-            <li>Tyler, the Creator</li>
-            <li>Fall out Boys</li>
-            <li>Hideki Naganuma</li>
-            <li>Bruno Mars</li>
-            <li>Current Joys</li>
-            <li>Sabrina Carpenter</li>
-            <li>Linkin Park</li>
-            <li>Tv Girl</li>
-            <li>Radiohead</li>
-            <li>Vocaloid</li>
-            <li>cavetown</li>
-            <li>Vacations</li>
-            <li>Dayglow</li>
-            <li>jack Stauber</li>
-            <li>Temporex</li>
-            <li>Mother Mother</li>
-            <li>AJR</li>
-            <li>The Cure</li>
-            <li>Mac DeMarco</li>
-            <li>Limp Bizkit</li>
-            <li>Juelieta Venegas</li>
-            <li>Mitski</li>
-            <li>Harmless</li>
-            <li>Los Retros</li>
-            <li>MARINA</li>
-            <img class="nasty" src="assets/imagenes/music.png" alt="San Pablo" height="450" width="780">
+    <p>En esta pagina quiero realizar una presentacion de mi persona, soy un chico de 18 años que nació el 10 de enero del 2006. Mis pasiones son la música, los videojuegos, las series animadas, las películas, y pasar el tiempo con mis amigos.</p>
+     <img class="sanpablo" src="assets/imagenes/milk.jpg" alt="San Pablo">
+    <!-- Música -->
+    <h2>Artistas/Bandas Musicales</h2>
+    <div class="grid-container">
+        <div>Her's</div><div>Esteman</div><div>Kali Uchis</div><div>Tyler, the Creator</div>
+        <div>Fall out Boys</div><div>Hideki Naganuma</div><div>Bruno Mars</div><div>Current Joys</div>
+        <div>Sabrina Carpenter</div><div>Linkin Park</div><div>Tv Girl</div><div>Radiohead</div>
+        <div>Vocaloid</div><div>Cavetown</div><div>Vacations</div><div>Dayglow</div>
+    </div>
+    <img src="assets/imagenes/music.png" alt="Artistas musicales">
 
-        </ul>
-        
-        <!-- Películas -->
-        <h3>Películas</h3>
-        <ul class="gustos">
-            <li>My Own Private Idaho</li>
-            <li>Baby Driver</li>
-            <li>Cientos de Castores</li>
-            <li>Ben 10: El secreto del omnitrix</li>
-            <li>Batman: El misterio de la capucha roja</li>
-            <li>The BATMAN (2022)</li>
-            <li>Spider-Man: Un nuervo universo</li>
-            <li>Un Sueño de Fuga</li>
-            <li>El Pianista</li>
-            <li>El Show de Trueman</li>
-        </ul>
-        
-        <!-- Videojuegos -->
-        <h3>Videojuegos</h3>
-        <ul class="gustos">
-            <li>La saga "Persona"</li>
-            <li>La saga "Resident Evil"</li>
-            <li>La saga "Dead Rising"</li>
-            <li>Jet Set Radio</li>
-            <li>Milk outside a bag of milk outside a bag of milk</li>
-            <li>The Evil Within</li>
-            <li>Cry Of Fear</li>
-            <li>La saga "Infamous"</li>
-            <li>Los juegos de Sonic</li>
-            <li>Undertale</li>
-            <li>Ultrakill</li>
-            <li>La saga "Devil May Cry"</li>
-            <li>La saga "Yakuza"</li>
-            <li>Far Cry 3</li>
-            <li>La saga "Batman Arkham"</li>
-            <li>South Park Stick Of Truth</li>
-            <li>La saga "Dead Space"</li>
-            <li>bomb Rush Cyberfunk</li>
-            <li>Half Life</li>
-            <li>left 4 Dead 2</li>
-            <li>Alice: Madness Return</li>
-            <li>Byoneta</li>
-            <li>Hotline Miami</li>
-            <li>Ib</li>
-            <li>Prototype</li>
-            <li>Dead Cells</li>
-            <li>Hi-Fi Rush</li>
-            <li>NEEDY GIRL OVERDOOSE</li>
-            <li>Blasphemous</li>
-            <img class="nasty" src="assets/imagenes/games.png" alt="San Pablo" height="450" width="780">
+    <!-- Películas -->
+    <h2>Películas</h2>
+    <div class="grid-container">
+        <div>My Own Private Idaho</div><div>Baby Driver</div><div>Cientos de Castores</div><div>Ben 10: El secreto del omnitrix</div>
+        <div>Batman: El misterio de la capucha roja</div><div>The BATMAN (2022)</div><div>Spider-Man: Un nuevo universo</div><div>Un Sueño de Fuga</div>
+        <div>El Pianista</div><div>El Show de Trueman</div>
+    </div>
 
-        </ul>
-    </section>
+    <!-- Videojuegos -->
+    <h2>Videojuegos</h2>
+    <div class="grid-container">
+        <div>La saga "Persona"</div><div>La saga "Resident Evil"</div><div>La saga "Dead Rising"</div><div>Jet Set Radio</div>
+        <div>Milk outside a bag of milk</div><div>The Evil Within</div><div>Cry Of Fear</div><div>Infamous</div>
+        <div>Sonic</div><div>Undertale</div><div>Ultrakill</div><div>Devil May Cry</div><div>Yakuza</div><div>Far Cry 3</div><div>Batman Arkham</div><div>South Park Stick Of Truth</div><div>La saga "Dead Space"</div><div>Bomb Rush Cyberfunk</div><div>Half life</div><div>left 4 Dead 2</div><div>Alice: Madness Return</div><div>Byoneta</div><div>Hotline Miami</div><div>Ib</div><div>Prototype</div><div>Dead Cells</div><div>Hi-Fi Rush</div><div>NEEDY GIRL OVERDOSE</div><div>Blasphemous</div><div>Saga "Postal"</div><div>Saga "God of War"</div><div>Saga "Uncharted"</div>
+    </div>
+    <img src="assets/imagenes/games.png" alt="Videojuegos">
 </main>
 <footer>
+    <p>&copy; 2024 Sebastian Adriano Castillo Carpio</p>
+</footer>
+</body>
+</html>
+
     <p>&copy; 2024 Sebastian Adriano Castillo Carpio</p>
 </footer>
 </body>
